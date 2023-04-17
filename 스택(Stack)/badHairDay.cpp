@@ -1,7 +1,9 @@
 // 불쾌한 날 : http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&wr_id=421&sca=3020
 
 #include <stdio.h>
+
 int stack[80001], st = -1;
+
 int main() {
 	int n, now;
 	long long cnt = 0;
