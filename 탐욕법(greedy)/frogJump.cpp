@@ -20,12 +20,12 @@ int chk2(tmp i, tmp j) {
 vector<tmp> wood;
 
 int main() {
-	int n, m, id = 1, now = 0, num = 1;
+	int n, m, now = 0, num = 1;
 	scanf("%d%d", &n, &m);
 	for (int i = 0; i < n; i++) {
 		int a, b, c;
 		scanf("%d%d%d", &a, &b, &c);
-		wood.push_back({ a,b,id++ }); // #1
+		wood.push_back({ a,b,i }); // #1
 	}
 	sort(wood.begin(), wood.end(), chk); // #2
 	wood[0].group = num;
@@ -54,5 +54,5 @@ int main() {
 //    i번 통나무의 왼쪽(x1)좌표가 now보다 작거나 같으면 이 통나무는 현재 그룹(num)에 속한다는 뜻이므로 group에 num을 지정하고,
 //    now보다 크다면 이 통나무는 새로운 그룹에 소속되어야 하므로 num을 1 올려주었다.
 //    같은 그룹에 속한다는 것은 개구리가 1번 이상의 점프로 이동할 수 있는 통나무 집합에 포함될 수 있다는 뜻이다.
-// #5 다시 통나무를 입력받을 당시의 순서로 바꿔야 이후에 연산에 편리할 것이라고 판단하여 id 순서대로 재정렬했다.
+// #5 다시 통나무를 입력받을 당시의 순서로 바꿔야 이후에 연산에 편리할 것이라고 판단하여 입력 순서대로 재정렬했다.
 // #6 이후 질문을 받아 a 통나무와 b 통나무의 group 번호를 비교하여 같으면 1, 아니면 0을 출력했다.
