@@ -1,4 +1,4 @@
-// 스도쿠 : 
+// 스도쿠 : https://www.acmicpc.net/problem/2580
 
 #include <stdio.h>
 #include <stdlib.h>
