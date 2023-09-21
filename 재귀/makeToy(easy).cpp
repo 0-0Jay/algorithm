@@ -34,7 +34,7 @@ int main() {
 	sol(n); // #2
 	for (int i = 1; i <= 100; i++) {
 		if (cnt[i] >= 1) {
-			printf("%d %d\n", i, cnt[i])
+			printf("%d %d\n", i, cnt[i]);
 		}
 	}
 	return 0;
