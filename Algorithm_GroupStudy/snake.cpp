@@ -61,3 +61,54 @@ int main() {
 풀이를 쓰다보니 deque 자료구조를 활용하여 머리가 지나간 방향을 저장하는 방법이 더 간단할 것 같다는 생각이 들었다.
 1. deque에 머리가 지나간 좌표를 push_back하고 map에 체크
 2. 사과를 못먹었으면 deque에서 map의 front좌표 초기화 후 pop_front();
+
+#include<stdio.h>
+#include<iostream>
+#include<algorithm>
+#include<queue>
+using namespace std;
+
+struct loc { int x, y; };
+
+int n, k, l, map[101][101], t = 1, sec;
+loc vt[4] = { {-1, 0}, { 0, 1 }, {1, 0}, {0, -1} };
+char d[10001];
+deque<loc> que;
+
+int main() {
+	scanf("%d %d", &n, &k);
+	for (int i = 0; i < k; i++) {
+		int a, b;
+		scanf("%d%d", &a, &b);
+		map[a][b] = 9;
+	}
+	que.push_back({ 1,1 });
+	map[1][1] = 1;
+	scanf("%d", &l);
+	for (int i = 0; i < l; i++) {
+		int a;
+		scanf("%d", &a);
+		scanf(" %c", &d[a]);	
+	}
+	while (1) {
+		sec++;
+		int nx = que.back().x + vt[t].x;
+		int ny = que.back().y + vt[t].y;
+		if (map[nx][ny] != 0 && map[nx][ny] != 9 || nx == 0 || nx == n + 1 || ny == 0 || ny == n + 1) {
+			printf("%d", sec);
+			return 0;
+		}
+		else {
+			if (map[nx][ny] != 9) {
+				map[que.front().x][que.front().y] = 0;
+				que.pop_front();
+			}
+			if (d[sec] == 'L') t = (t + 3) % 4;
+			else if (d[sec] == 'D') t = (t + 1) % 4;
+			map[nx][ny] = 1;
+			que.push_back({ nx, ny });
+		}
+	}
+	printf("%d", sec);
+}
+*/
