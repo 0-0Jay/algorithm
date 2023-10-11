@@ -1,4 +1,4 @@
-// 백준 2141번 우체국 : https://www.acmicpc.net/problem/2141
+# 백준 2141번 우체국 : https://www.acmicpc.net/problem/2141
 
 import sys
 import math
