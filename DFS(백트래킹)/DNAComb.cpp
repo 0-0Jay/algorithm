@@ -3,7 +3,7 @@
 #include<stdio.h>
 #include<string>
 using namespace std;
-
+ 
 int n, m = 100, check[7];
 char arr[7][8];
 
