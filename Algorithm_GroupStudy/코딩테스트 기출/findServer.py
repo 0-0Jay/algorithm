@@ -1,4 +1,4 @@
-# 2024 네이버 신입 공채 - 서버찾기
+# 서버 찾기
 
 import sys
 input = sys.stdin.readline
