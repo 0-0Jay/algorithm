@@ -1,4 +1,4 @@
-# 현대오토에버 2024 신입 - 노후화 예측하기
+# 노후화 예측하기
 
 import sys
 input = sys.stdin.readline
