@@ -1,4 +1,4 @@
-# 2024 네이버 신입 공채 - 점수 옮기기
+# 점수 옮기기
 
 import sys
 input = sys.stdin.readline
