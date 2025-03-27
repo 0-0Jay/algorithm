@@ -1,4 +1,4 @@
-# 2024 네이버 신입 공채 - 행복한 식물
+# 행복한 식물
 
 import sys
 input = sys.stdin.readline
