@@ -1,4 +1,4 @@
-백준 2878번 캔디캔디 : https://www.acmicpc.net/problem/2878
+# 백준 2878번 캔디캔디 : https://www.acmicpc.net/problem/2878
 
 from collections import deque
 import heapq as hq
