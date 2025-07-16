@@ -1,4 +1,4 @@
-백준 1507번 궁금한 민호 : https://www.acmicpc.net/problem/1507
+# 백준 1507번 궁금한 민호 : https://www.acmicpc.net/problem/1507
 
 import sys
 input = sys.stdin.readline
