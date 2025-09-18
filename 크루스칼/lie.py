@@ -1,4 +1,4 @@
-백준 1043번 거짓말 : https://www.acmicpc.net/problem/1043
+# 백준 1043번 - 거짓말 : https://www.acmicpc.net/problem/1043
 
 from collections import defaultdict, deque
 import heapq as hq
