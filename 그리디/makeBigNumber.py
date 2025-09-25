@@ -1,4 +1,4 @@
-# 백준 16496번 큰 수 만들기 : https://www.acmicpc.net/problem/16496
+# 백준 16496번 - 큰 수 만들기 : https://www.acmicpc.net/problem/16496
 
 from functools import cmp_to_key
 import sys
