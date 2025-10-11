@@ -1,4 +1,4 @@
-# 백준 16118번 : https://www.acmicpc.net/problem/16118
+# 백준 16118번 - 달빛 여우 : https://www.acmicpc.net/problem/16118
 
 import sys
 import heapq as hq
